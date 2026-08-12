@@ -4,7 +4,7 @@ import { SectionHeading } from "./section-heading";
 
 const stats = [
   { value: "6+", label: "Projects Completed", icon: Laptop2 },
-  { value: "7", label: "Certifications", icon: Award },
+  { value: "8", label: "Certifications", icon: Award },
   { value: "3.77", label: "CGPA", icon: GraduationCap }
 ];
 
