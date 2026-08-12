@@ -44,7 +44,7 @@ export function Hero() {
           <div className="absolute h-[26rem] w-[26rem] rounded-full border border-accent/25 shadow-[0_0_120px_rgba(255,107,74,0.2)] sm:h-[30rem] sm:w-[30rem]" />
           <div className="relative aspect-square w-[18rem] overflow-hidden rounded-full bg-surface shadow-2xl shadow-black/40 sm:w-[24rem] lg:w-[28rem]">
             <Image
-              src="/profile.jpg"
+              src="/profile.png"
               alt="Waleed Ahmad portrait"
               fill
               priority
