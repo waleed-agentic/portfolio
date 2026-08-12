@@ -5,7 +5,8 @@ import { Hero } from "../components/hero";
 import { Navbar } from "../components/navbar";
 import { Projects } from "../components/projects";
 import { Skills } from "../components/skills";
-import { projects, skillCategories } from "../lib/portfolio-data";
+import { Certifications } from "../components/certifications";
+import { certifications, projects, skillCategories } from "../lib/portfolio-data";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Hero />
       <About />
       <Skills categories={skillCategories} />
+      <Certifications certifications={certifications} />
       <Projects projects={projects} />
       <Contact />
       <Footer />

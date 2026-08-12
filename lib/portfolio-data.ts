@@ -11,6 +11,12 @@ export type Project = {
   snippet: string[];
 };
 
+export type Certification = {
+  title: string;
+  issuer: string;
+  inProgress?: boolean;
+};
+
 export const skillCategories: SkillCategory[] = [
   {
     title: "Agentic AI & Orchestration",
@@ -27,6 +33,34 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Deployment & Tools",
     items: ["Streamlit", "ngrok", "Google Colab", "GitHub", "Jupyter"]
+  }
+];
+
+export const certifications: Certification[] = [
+  {
+    title: "Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI",
+    issuer: "IBM"
+  },
+  {
+    title: "Generative AI with Large Language Models",
+    issuer: "DeepLearning.AI & AWS"
+  },
+  {
+    title: "Deep Learning Specialization",
+    issuer: "DeepLearning.AI (4 courses: NNs, RNNs, Transformers)"
+  },
+  {
+    title: "Build AI Agents with n8n",
+    issuer: "Coursera",
+    inProgress: true
+  },
+  {
+    title: "Introduction to Data Analytics",
+    issuer: "Simplilearn"
+  },
+  {
+    title: "Python Libraries for Data Science",
+    issuer: "Simplilearn"
   }
 ];
 
