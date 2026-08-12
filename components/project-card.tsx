@@ -17,18 +17,21 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
         }`}
       >
         <div className="w-full lg:w-[42%]">
-          <div className="overflow-hidden rounded-[1.75rem] border border-white/8 bg-[#091019] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+          <div className="max-w-full overflow-hidden rounded-[1.75rem] border border-white/8 bg-[#091019] p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:p-4">
             <div className="mb-4 flex items-center gap-2">
               <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
               <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
               <span className="h-3 w-3 rounded-full bg-[#28c840]" />
             </div>
 
-            <div className="space-y-3 rounded-3xl border border-white/6 bg-white/4 p-5">
+            <div className="max-w-full space-y-3 rounded-3xl border border-white/6 bg-white/4 p-4 sm:p-5">
               {project.snippet.map((line, index) => (
-                <div key={line} className="flex items-start gap-3 font-mono text-sm text-[#c9d1d9]">
+                <div
+                  key={line}
+                  className="flex items-start gap-3 overflow-x-auto font-mono text-xs text-[#c9d1d9] sm:text-sm"
+                >
                   <span className="select-none text-xs text-muted/80">0{index + 1}</span>
-                  <code className="leading-6">{line}</code>
+                  <code className="min-w-0 whitespace-pre-wrap break-words leading-6">{line}</code>
                 </div>
               ))}
             </div>

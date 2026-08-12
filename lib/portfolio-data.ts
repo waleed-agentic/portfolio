@@ -1,3 +1,5 @@
+import { Award, GraduationCap, Laptop2 } from "lucide-react";
+
 export type SkillCategory = {
   title: string;
   items: string[];
@@ -62,6 +64,12 @@ export const certifications: Certification[] = [
     title: "Python Libraries for Data Science",
     issuer: "Simplilearn"
   }
+];
+
+export const aboutStats = [
+  { value: "6", label: "Projects Completed", icon: Laptop2 },
+  { value: "8", label: "Certifications", icon: Award },
+  { value: "3.77", label: "CGPA", icon: GraduationCap }
 ];
 
 export const projects: Project[] = [
