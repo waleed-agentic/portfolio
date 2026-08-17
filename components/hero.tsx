@@ -49,7 +49,7 @@ export function Hero() {
                 fill
                 priority
                 sizes="(max-width: 1024px) 288px, 448px"
-                className="scale-125 object-cover"
+                className="scale-125 object-cover object-[center_25%]"
               />
             </div>
           </div>
