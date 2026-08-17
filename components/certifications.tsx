@@ -8,6 +8,8 @@ type CertificationsProps = {
 };
 
 export function Certifications({ certifications }: CertificationsProps) {
+  const shouldCenterLastCard = certifications.length % 3 === 1;
+
   return (
     <section id="certifications" className="py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -20,11 +22,16 @@ export function Certifications({ certifications }: CertificationsProps) {
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {certifications.map((certification, index) => {
             const Icon = certification.inProgress ? BadgeCheck : Award;
+            const isCenteredTailCard = shouldCenterLastCard && index === certifications.length - 1;
 
             return (
               <Reveal
                 key={certification.title}
-                className="rounded-[1.75rem] border border-border bg-surface/70 p-6 shadow-xl shadow-black/15 transition-transform duration-300 hover:-translate-y-1 hover:border-accent/30"
+                className={`rounded-[1.75rem] border border-border bg-surface/70 p-6 shadow-xl shadow-black/15 transition-transform duration-300 hover:-translate-y-1 hover:border-accent/30 ${
+                  isCenteredTailCard
+                    ? "sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-xl xl:col-span-1 xl:col-start-2 xl:mx-0 xl:max-w-none"
+                    : ""
+                }`}
                 delay={index * 0.07}
               >
                 <div className="mb-5 flex items-start gap-4">

@@ -1,9 +1,26 @@
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
 import type { SkillCategory } from "../lib/portfolio-data";
-import { Bot, Cpu, Database, Layers3 } from "lucide-react";
+import { Bot, Cpu, Database, Layers3, Workflow } from "lucide-react";
 
-const icons = [Bot, Layers3, Cpu, Database];
+const icons = [Bot, Layers3, Cpu, Workflow, Database];
+
+function renderSkillLabel(item: string) {
+  const beginnerMatch = item.match(/^(.*)\s\((Beginner)\)$/);
+
+  if (!beginnerMatch) {
+    return item;
+  }
+
+  const [, mainLabel, qualifier] = beginnerMatch;
+
+  return (
+    <>
+      <span>{mainLabel}</span>{" "}
+      <span className="text-xs text-muted">({qualifier})</span>
+    </>
+  );
+}
 
 type SkillsProps = {
   categories: SkillCategory[];
@@ -19,7 +36,7 @@ export function Skills({ categories }: SkillsProps) {
           description="A focused stack for building agentic systems, LLM-powered products, and practical machine learning workflows."
         />
 
-        <div className="grid gap-5 lg:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {categories.map((category, index) => {
             const Icon = icons[index % icons.length];
 
@@ -42,7 +59,7 @@ export function Skills({ categories }: SkillsProps) {
                       key={item}
                       className="rounded-full border border-white/8 bg-white/5 px-4 py-2 text-sm font-medium text-text/90"
                     >
-                      {item}
+                      {renderSkillLabel(item)}
                     </span>
                   ))}
                 </div>

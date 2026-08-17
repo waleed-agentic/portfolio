@@ -22,7 +22,7 @@ export type Certification = {
 export const skillCategories: SkillCategory[] = [
   {
     title: "Agentic AI & Orchestration",
-    items: ["CrewAI", "LangGraph", "Multi-Agent Orchestration", "Prompt Engineering"]
+    items: ["CrewAI", "LangGraph (Beginner)", "Multi-Agent Orchestration", "Prompt Engineering"]
   },
   {
     title: "LLMs & GenAI",
@@ -31,6 +31,10 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "ML/DL",
     items: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "SMOTE"]
+  },
+  {
+    title: "Automation & Workflow",
+    items: ["n8n (AI Agent Workflow Automation)", "Webhooks", "API Integration"]
   },
   {
     title: "Deployment & Tools",
@@ -53,8 +57,7 @@ export const certifications: Certification[] = [
   },
   {
     title: "Build AI Agents with n8n",
-    issuer: "Coursera",
-    inProgress: true
+    issuer: "Coursera"
   },
   {
     title: "Introduction to Data Analytics",
@@ -63,12 +66,16 @@ export const certifications: Certification[] = [
   {
     title: "Python Libraries for Data Science",
     issuer: "Simplilearn"
+  },
+  {
+    title: "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (Ch. 1–9)",
+    issuer: "Self-Study"
   }
 ];
 
 export const aboutStats = [
   { value: "6", label: "Projects Completed", icon: Laptop2 },
-  { value: "8", label: "Certifications", icon: Award },
+  { value: "10", label: "Certifications", icon: Award },
   { value: "3.77", label: "CGPA", icon: GraduationCap }
 ];
 
