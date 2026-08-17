@@ -57,7 +57,7 @@ export const certifications: Certification[] = [
   },
   {
     title: "Build AI Agents with n8n",
-    issuer: "Coursera"
+    issuer: "Edureka"
   },
   {
     title: "Introduction to Data Analytics",
