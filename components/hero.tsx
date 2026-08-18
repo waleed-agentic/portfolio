@@ -41,16 +41,19 @@ export function Hero() {
 
         <Reveal className="relative mx-auto flex w-full max-w-[460px] items-center justify-center lg:justify-end" delay={0.15} direction="right">
           <div className="relative aspect-square w-[18rem] sm:w-[24rem] lg:w-[28rem]">
-            <div className="pointer-events-none absolute -inset-[6%] rounded-full bg-orange-500/30 blur-3xl" />
-            <div className="relative z-10 h-full w-full overflow-hidden rounded-full">
-              <Image
-                src="/profile.png"
-                alt="Waleed Ahmad portrait"
-                fill
-                priority
-                sizes="(max-width: 1024px) 288px, 448px"
-                className="scale-125 object-cover object-[center_25%]"
-              />
+            <div className="pointer-events-none absolute -inset-[16%] rounded-full bg-[radial-gradient(circle,rgba(255,107,74,0.48)_0%,rgba(255,107,74,0.26)_34%,rgba(13,17,23,0.34)_60%,rgba(13,17,23,0)_82%)] blur-[110px]" />
+            <div className="pointer-events-none absolute -inset-[8%] rounded-full bg-orange-500/26 blur-[95px]" />
+            <div className="relative z-10 h-full w-full p-4 sm:p-5 lg:p-6">
+              <div className="relative h-full w-full overflow-hidden rounded-full [mask-image:radial-gradient(circle,black_73%,transparent_100%)] [-webkit-mask-image:radial-gradient(circle,black_73%,transparent_100%)]">
+                <Image
+                  src="/profile.png"
+                  alt="Waleed Ahmad portrait"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 288px, 448px"
+                  className="scale-125 object-cover object-[center_25%]"
+                />
+              </div>
             </div>
           </div>
         </Reveal>
