@@ -33,10 +33,6 @@ export const skillCategories: SkillCategory[] = [
     items: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "SMOTE"]
   },
   {
-    title: "Automation & Workflow",
-    items: ["n8n (AI Agent Workflow Automation)", "Webhooks", "API Integration"]
-  },
-  {
     title: "Deployment & Tools",
     items: ["Streamlit", "ngrok", "Google Colab", "GitHub", "Jupyter"]
   }
