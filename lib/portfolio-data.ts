@@ -70,7 +70,7 @@ export const certifications: Certification[] = [
 ];
 
 export const aboutStats = [
-  { value: "6", label: "Projects Completed", icon: Laptop2 },
+  { value: "7", label: "Projects Completed", icon: Laptop2 },
   { value: "10", label: "Certifications", icon: Award },
   { value: "3.77", label: "CGPA", icon: GraduationCap }
 ];
@@ -134,6 +134,18 @@ export const projects: Project[] = [
       "graph.add_conditional_edges('router', route_ticket)",
       "answer = support_graph.invoke(customer_query)",
       "logger.info('ticket routed to specialist agent')"
+    ]
+  },
+  {
+    title: "AI Code Review Agent (Multi-Agent)",
+    tags: ["LangGraph", "Groq", "Streamlit"],
+    description:
+      "Built a 4-node LangGraph agent (Scanner, Flagger, Fixer, Rechecker) that auto-detects and iteratively fixes bugs, security, and performance issues in code, deployed as a Streamlit app with PDF upload support, exposed via ngrok for live demo access.",
+    github: "https://github.com/waleed-agentic/ai-code-review-agent",
+    snippet: [
+      "graph.add_node(\"scanner\", scan_code)",
+      "graph.add_node(\"fixer\", fix_issues)",
+      "result = review_graph.invoke(code_input)"
     ]
   },
   {
