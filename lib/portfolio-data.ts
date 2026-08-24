@@ -125,7 +125,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    title: "Customer Support Multi-Agent System (Multi-Agent)",
+    title: "Customer Support Multi-Agent System (Multi-Node)",
     tags: ["LangGraph"],
     description:
       "A multi-agent support system with conditional routing logic to direct queries to the correct specialized agent, deployed via Streamlit and ngrok.",
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    title: "AI Code Review Agent (Multi-Agent)",
+    title: "AI Code Review Agent (Multi-Node)",
     tags: ["LangGraph", "Groq", "Streamlit"],
     description:
       "Built a 4-node LangGraph agent (Scanner, Flagger, Fixer, Rechecker) that auto-detects and iteratively fixes bugs, security, and performance issues in code, deployed as a Streamlit app with PDF upload support, exposed via ngrok for live demo access.",
