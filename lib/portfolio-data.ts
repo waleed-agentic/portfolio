@@ -70,7 +70,7 @@ export const certifications: Certification[] = [
 ];
 
 export const aboutStats = [
-  { value: "7", label: "Projects Completed", icon: Laptop2 },
+  { value: "8", label: "Projects Completed", icon: Laptop2 },
   { value: "10", label: "Certifications", icon: Award },
   { value: "3.77", label: "CGPA", icon: GraduationCap }
 ];
@@ -146,6 +146,18 @@ export const projects: Project[] = [
       "graph.add_node(\"scanner\", scan_code)",
       "graph.add_node(\"fixer\", fix_issues)",
       "result = review_graph.invoke(code_input)"
+    ]
+  },
+  {
+    title: "Personal Finance Agent (Multi-Node)",
+    tags: ["LangGraph", "Groq", "Streamlit"],
+    description:
+      "Built a 3-node LangGraph agent (Categorize, Detect Pattern, Summarize) that categorizes expenses, flags overspending, and generates a spending-pattern summary, deployed as a Streamlit app with CSV upload and Plotly visualizations, exposed via ngrok for live demo access.",
+    github: "https://github.com/waleed-agentic/ai-personal-finance-agent",
+    snippet: [
+      "graph.add_node(\"categorize\", categorize_expense)",
+      "graph.add_node(\"detect_pattern\", flag_overspending)",
+      "result = finance_graph.invoke(csv_data)"
     ]
   },
   {
