@@ -13,20 +13,20 @@ const bodyFont = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Waleed Ahmad | AI/ML Engineer & Agentic AI Developer",
+  title: "Waleed Ahmad | AI/ML Engineer & Agentic AI Engineer",
   description:
     "Waleed Ahmad's portfolio showcasing AI/ML engineering, agentic AI systems, LLM applications, and project work.",
   keywords: ["Waleed Ahmad", "AI/ML Engineer", "Agentic AI", "CrewAI", "LangGraph", "Portfolio"],
   authors: [{ name: "Waleed Ahmad" }],
   openGraph: {
-    title: "Waleed Ahmad | AI/ML Engineer & Agentic AI Developer",
+    title: "Waleed Ahmad | AI/ML Engineer & Agentic AI Engineer",
     description:
       "Modern portfolio featuring agentic AI systems, LLM projects, machine learning work, and contact details.",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Waleed Ahmad | AI/ML Engineer & Agentic AI Developer",
+    title: "Waleed Ahmad | AI/ML Engineer & Agentic AI Engineer",
     description:
       "Modern portfolio featuring agentic AI systems, LLM projects, machine learning work, and contact details."
   }

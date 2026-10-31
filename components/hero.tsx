@@ -12,7 +12,7 @@ export function Hero() {
             Hello,
           </div>
 
-          <p className="mb-3 text-sm uppercase tracking-[0.35em] text-muted">AI/ML Engineer | Agentic AI Developer</p>
+          <p className="mb-3 text-sm uppercase tracking-[0.35em] text-muted">AI/ML Engineer | Agentic AI Engineer</p>
           <h1 className="font-display text-5xl font-semibold leading-[0.95] tracking-tight text-text sm:text-6xl lg:text-7xl">
             I&apos;m <span className="text-accent">Waleed</span>
           </h1>
