@@ -1,9 +1,9 @@
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
 import type { SkillCategory } from "../lib/portfolio-data";
-import { Bot, Cpu, Database, Layers3 } from "lucide-react";
+import { Bot, BrainCircuit, Cpu, Database, Layers3 } from "lucide-react";
 
-const icons = [Bot, Layers3, Cpu, Database];
+const icons = [Bot, Layers3, Database, Cpu, BrainCircuit];
 
 function renderSkillLabel(item: string) {
   const beginnerMatch = item.match(/^(.*)\s\((Beginner)\)$/);
@@ -27,6 +27,8 @@ type SkillsProps = {
 };
 
 export function Skills({ categories }: SkillsProps) {
+  const shouldCenterLastCard = categories.length % 2 === 1;
+
   return (
     <section id="skills" className="py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -43,7 +45,11 @@ export function Skills({ categories }: SkillsProps) {
             return (
               <Reveal
                 key={category.title}
-                className="rounded-[1.75rem] border border-border bg-surface/70 p-6 shadow-xl shadow-black/15"
+                className={`rounded-[1.75rem] border border-border bg-surface/70 p-6 shadow-xl shadow-black/15 ${
+                  shouldCenterLastCard && index === categories.length - 1
+                    ? "md:col-span-2 md:mx-auto md:w-full md:max-w-xl"
+                    : ""
+                }`}
                 delay={index * 0.08}
               >
                 <div className="mb-5 flex items-center gap-3">

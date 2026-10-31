@@ -22,19 +22,23 @@ export type Certification = {
 export const skillCategories: SkillCategory[] = [
   {
     title: "Agentic AI & Orchestration",
-    items: ["CrewAI", "LangGraph (Beginner)", "Multi-Agent Orchestration", "Prompt Engineering"]
+    items: ["CrewAI", "LangGraph", "Multi-Agent Orchestration", "Prompt Engineering"]
   },
   {
     title: "LLMs & GenAI",
     items: ["Groq API (Llama 3.3 70B, gpt-oss-120b)", "Serper.dev"]
   },
   {
+    title: "Programming & Data",
+    items: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "SQL"]
+  },
+  {
     title: "ML/DL",
-    items: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "SMOTE"]
+    items: ["Scikit-learn", "XGBoost", "SMOTE"]
   },
   {
     title: "Deployment & Tools",
-    items: ["Streamlit", "ngrok", "Google Colab", "GitHub", "Jupyter"]
+    items: ["Streamlit", "Google Colab", "GitHub", "Jupyter"]
   }
 ];
 
@@ -52,8 +56,8 @@ export const certifications: Certification[] = [
     issuer: "DeepLearning.AI (4 courses: NNs, RNNs, Transformers)"
   },
   {
-    title: "Build AI Agents with n8n",
-    issuer: "Edureka"
+    title: "Databases and SQL for Data Science with Python",
+    issuer: "IBM"
   },
   {
     title: "Introduction to Data Analytics",
@@ -78,9 +82,9 @@ export const aboutStats = [
 export const projects: Project[] = [
   {
     title: "Research Assistant Agent (Multi-Agent)",
-    tags: ["CrewAI", "Serper.dev", "Groq"],
+    tags: ["CrewAI", "Serper.dev"],
     description:
-      "Built a 3-agent CrewAI system (Researcher, Summarizer, Citer) using a sequential pipeline with real-time web search and Groq's Llama 3.3 70B. Deployed as a public Streamlit app via ngrok.",
+      "Built a 3-agent CrewAI system (Researcher, Summarizer, Citer) using a sequential pipeline with real-time web search (Serper.dev) and Groq's Llama 3.3 70B. Deployed as a public Streamlit app, resolving async event-loop and GPU compatibility issues in the Colab environment.",
     github: "https://github.com/waleed-agentic/research-assistant-agent",
     snippet: [
       "agents = [Researcher(), Summarizer(), Citer()]",
@@ -128,7 +132,7 @@ export const projects: Project[] = [
     title: "Customer Support Multi-Agent System (Multi-Node)",
     tags: ["LangGraph"],
     description:
-      "A multi-agent support system with conditional routing logic to direct queries to the correct specialized agent, deployed via Streamlit and ngrok.",
+      "A multi-agent support system with conditional routing logic to direct queries to the correct specialized agent, deployed via Streamlit for live demo access.",
     github: "https://github.com/waleed-agentic/customer-support-multiagent-langgraph",
     snippet: [
       "graph.add_conditional_edges('router', route_ticket)",
@@ -138,9 +142,9 @@ export const projects: Project[] = [
   },
   {
     title: "AI Code Review Agent (Multi-Node)",
-    tags: ["LangGraph", "Groq", "Streamlit"],
+    tags: ["LangGraph", "Streamlit"],
     description:
-      "Built a 4-node LangGraph agent (Scanner, Flagger, Fixer, Rechecker) that auto-detects and iteratively fixes bugs, security, and performance issues in code, deployed as a Streamlit app with PDF upload support, exposed via ngrok for live demo access.",
+      "Built a 4-node LangGraph agent (Scanner, Flagger, Fixer, Rechecker) that auto-detects and iteratively fixes bugs, security, and performance issues in code, deployed as a Streamlit app with PDF upload.",
     github: "https://github.com/waleed-agentic/ai-code-review-agent",
     snippet: [
       "graph.add_node(\"scanner\", scan_code)",
@@ -150,9 +154,9 @@ export const projects: Project[] = [
   },
   {
     title: "Personal Finance Agent (Multi-Node)",
-    tags: ["LangGraph", "Groq", "Streamlit"],
+    tags: ["LangGraph"],
     description:
-      "Built a 3-node LangGraph agent (Categorize, Detect Pattern, Summarize) that categorizes expenses, flags overspending, and generates a spending-pattern summary, deployed as a Streamlit app with CSV upload and Plotly visualizations, exposed via ngrok for live demo access.",
+      "Built a 3-node LangGraph agent (Categorize, Detect Pattern, Summarize) that categorizes expenses, flags overspending, and generates a spending-pattern summary, deployed as a Streamlit app with CSV upload and Plotly visualizations.",
     github: "https://github.com/waleed-agentic/ai-personal-finance-agent",
     snippet: [
       "graph.add_node(\"categorize\", categorize_expense)",

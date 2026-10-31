@@ -1,15 +1,14 @@
-import { Award, Bot, BrainCircuit, CheckCircle2, GraduationCap, Laptop2 } from "lucide-react";
+import { Award, Bot, BrainCircuit, GraduationCap, Laptop2 } from "lucide-react";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
 import { aboutStats } from "../lib/portfolio-data";
 
 const features = [
   "Agentic AI Development",
-  "LLM & GenAI Applications",
-  "Machine Learning & Deep Learning"
+  "LLM & GenAI Applications"
 ];
 
-const featureIcons = [Bot, BrainCircuit, CheckCircle2];
+const featureIcons = [Bot, BrainCircuit];
 
 export function About() {
   return (
@@ -18,7 +17,7 @@ export function About() {
         <SectionHeading
           eyebrow="About"
           title="About Me"
-          description="BS Data Science student at Riphah International University Faisalabad (3rd Semester, CGPA 3.77), focused on becoming an AI/ML and Agentic AI Engineer. Hands-on experience building multi-agent systems with CrewAI and LangGraph, deployed using Streamlit, ngrok, and Google Colab."
+          description="BS Data Science student at Riphah International University Faisalabad (3rd Semester, CGPA 3.77), focused on becoming an AI/ML and Agentic AI Engineer. Hands-on experience building multi-agent systems with CrewAI and LangGraph, deployed using Streamlit and Google Colab."
         />
 
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
