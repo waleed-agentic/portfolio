@@ -1,4 +1,12 @@
-import { Award, GraduationCap, Laptop2 } from "lucide-react";
+import {
+  Award,
+  BrainCircuit,
+  Bot,
+  CheckCircle2,
+  GraduationCap,
+  Laptop2,
+  type LucideIcon
+} from "lucide-react";
 
 export type SkillCategory = {
   title: string;
@@ -17,6 +25,12 @@ export type Certification = {
   title: string;
   issuer: string;
   inProgress?: boolean;
+};
+
+export type AboutFeature = {
+  title: string;
+  subtext: string;
+  icon: LucideIcon;
 };
 
 export const skillCategories: SkillCategory[] = [
@@ -39,6 +53,24 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Deployment & Tools",
     items: ["Streamlit", "Google Colab", "GitHub", "Jupyter"]
+  }
+];
+
+export const aboutFeatures: AboutFeature[] = [
+  {
+    title: "Agentic AI Development",
+    subtext: "Focused on practical systems that ship.",
+    icon: Bot
+  },
+  {
+    title: "LLM & GenAI Applications",
+    subtext: "Focused on practical systems that ship.",
+    icon: BrainCircuit
+  },
+  {
+    title: "Machine Learning",
+    subtext: "Focused on practical systems that ship.",
+    icon: CheckCircle2
   }
 ];
 

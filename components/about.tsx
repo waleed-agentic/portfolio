@@ -1,14 +1,7 @@
-import { Award, Bot, BrainCircuit, GraduationCap, Laptop2 } from "lucide-react";
+import { Award, GraduationCap, Laptop2 } from "lucide-react";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
-import { aboutStats } from "../lib/portfolio-data";
-
-const features = [
-  "Agentic AI Development",
-  "LLM & GenAI Applications"
-];
-
-const featureIcons = [Bot, BrainCircuit];
+import { aboutFeatures, aboutStats } from "../lib/portfolio-data";
 
 export function About() {
   return (
@@ -23,20 +16,20 @@ export function About() {
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
           <Reveal className="rounded-[2rem] border border-border bg-surface/70 p-8 shadow-2xl shadow-black/20">
             <div className="grid gap-4">
-              {features.map((feature, index) => {
-                const Icon = featureIcons[index];
+              {aboutFeatures.map((feature) => {
+                const Icon = feature.icon;
 
                 return (
                   <div
-                    key={feature}
+                    key={feature.title}
                     className="flex items-center gap-4 rounded-2xl border border-white/5 bg-white/5 px-5 py-4"
                   >
                     <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/10 text-accent">
                       <Icon className="h-5 w-5" />
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-text">{feature}</p>
-                      <p className="text-sm text-muted">Focused on practical systems that ship.</p>
+                      <p className="text-sm font-semibold text-text">{feature.title}</p>
+                      <p className="text-sm text-muted">{feature.subtext}</p>
                     </div>
                   </div>
                 );
