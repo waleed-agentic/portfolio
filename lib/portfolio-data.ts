@@ -40,7 +40,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "LLMs & GenAI",
-    items: ["Groq API (Llama 3.3 70B, gpt-oss-120b)", "Serper.dev"]
+    items: ["Groq API", "Serper.dev"]
   },
   {
     title: "Programming & Data",
@@ -98,6 +98,10 @@ export const certifications: Certification[] = [
   {
     title: "Python Libraries for Data Science",
     issuer: "Simplilearn"
+  },
+  {
+    title: "Start Writing Prompts like a Pro",
+    issuer: "Google (via Coursera)"
   },
   {
     title: "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (Ch. 1–9)",
