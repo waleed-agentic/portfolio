@@ -77,19 +77,19 @@ export const aboutFeatures: AboutFeature[] = [
 export const certifications: Certification[] = [
   {
     title: "Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI",
-    issuer: "IBM"
+    issuer: "IBM (Coursera)"
   },
   {
     title: "Generative AI with Large Language Models",
-    issuer: "DeepLearning.AI & AWS"
+    issuer: "DeepLearning.AI & AWS (Coursera)"
   },
   {
     title: "Deep Learning Specialization",
-    issuer: "DeepLearning.AI (4 courses: NNs, RNNs, Transformers)"
+    issuer: "DeepLearning.AI (Coursera) · 4 courses: NNs, RNNs, Transformers"
   },
   {
     title: "Databases and SQL for Data Science with Python",
-    issuer: "IBM"
+    issuer: "IBM (Coursera)"
   },
   {
     title: "Introduction to Data Analytics",
@@ -101,7 +101,7 @@ export const certifications: Certification[] = [
   },
   {
     title: "Start Writing Prompts like a Pro",
-    issuer: "Google (via Coursera)"
+    issuer: "Google (Coursera)"
   },
   {
     title: "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (Ch. 1–9)",
@@ -111,7 +111,7 @@ export const certifications: Certification[] = [
 
 export const aboutStats = [
   { value: "8", label: "Projects Completed", icon: Laptop2 },
-  { value: "10", label: "Certifications", icon: Award },
+  { value: "11", label: "Certifications", icon: Award },
   { value: "3.77", label: "CGPA", icon: GraduationCap }
 ];
 

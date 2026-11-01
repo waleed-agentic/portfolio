@@ -8,9 +8,6 @@ type CertificationsProps = {
 };
 
 export function Certifications({ certifications }: CertificationsProps) {
-  const shouldCenterLastCard = certifications.length % 3 === 1;
-  const shouldCenterLastRow = certifications.length % 3 === 2;
-
   return (
     <section id="certifications" className="py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -20,23 +17,14 @@ export function Certifications({ certifications }: CertificationsProps) {
           description="Selected certifications and courses across agentic AI, generative AI, deep learning, and analytics."
         />
 
-        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="flex flex-wrap justify-center gap-5">
           {certifications.map((certification, index) => {
             const Icon = certification.inProgress ? BadgeCheck : Award;
-            const isCenteredTailCard = shouldCenterLastCard && index === certifications.length - 1;
-            const isCenteredTailRow =
-              shouldCenterLastRow && index >= certifications.length - 2;
 
             return (
               <Reveal
                 key={certification.title}
-                className={`rounded-[1.75rem] border border-border bg-surface/70 p-6 shadow-xl shadow-black/15 transition-transform duration-300 hover:-translate-y-1 hover:border-accent/30 ${
-                  isCenteredTailCard
-                    ? "sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-xl xl:col-span-1 xl:col-start-2 xl:mx-0 xl:max-w-none"
-                    : isCenteredTailRow
-                      ? "xl:translate-x-1/2"
-                      : ""
-                }`}
+                className="w-full rounded-[1.75rem] border border-border bg-surface/70 p-6 shadow-xl shadow-black/15 transition-transform duration-300 hover:-translate-y-1 hover:border-accent/30 sm:w-[calc((100%_-_1.25rem)/2)] xl:w-[calc((100%_-_2.5rem)/3)]"
                 delay={index * 0.07}
               >
                 <div className="mb-5 flex items-start gap-4">
